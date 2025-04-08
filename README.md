@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# QueerTravel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**QueerTravel** is an interactive visualization tool designed to support safer travel decision-making for queer individuals by integrating formal social safety indicators with community-contributed lived experiences.
 
-Currently, two official plugins are available:
+Discrimination at travel destinations can significantly affect the wellbeing and freedom of queer travelers, often resulting in exclusion, restricted self-expression, or even physical harm. While prior research has highlighted these risks and associated coping strategies, available information remains scattered and difficult to act upon.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To address this gap, we conducted interviews with queer travelers to identify key factors that shape their perceptions of social safety, along with their broader informational needs. Drawing from these insights, **QueerTravel** provides a visual decision-support system that presents curated safety data across 203 countries.
 
-## Expanding the ESLint configuration
+The tool combines:
+- Legal and institutional safety indicators (e.g., same-sex marriage status, non-binary recognition, transgender murder rates, morality laws)
+- Community-generated travel experiences to enrich the narrative with real, situated voices
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Users can explore a **map-based overview** and **tabular comparisons**, and contribute their own experiences through a mobile-friendly input interface. This combination fosters a more inclusive, empowering approach to travel planning—moving the narrative from risk toward **participation, safety, and empowerment**.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Follow these steps to run the project locally:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 1. Clone the repository
+Open your terminal and run:
+git clone https://github.com/basakoral/QueerTravel.git
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 2. Navigate to the project folder
+cd QueerTravel
+
+### 3. Install dependencies
+npm install
+
+### 4. Run the app locally
+npm run dev
+
+### 5. Open your browser and go to
+http://localhost:3001/app/
+
+
+
